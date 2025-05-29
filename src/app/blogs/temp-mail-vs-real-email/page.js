@@ -2,6 +2,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import { tempvsreal } from '@/images/Image';
 
 const TempMailVsRealEmail = () => {
   return (
@@ -12,12 +13,12 @@ const TempMailVsRealEmail = () => {
         <meta property="og:title" content="Temp Mail vs Real Email" />
         <meta property="og:description" content="Compare temp mail with real email accounts. Understand the differences in security, privacy, functionality, and best use cases." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://yourdomain.com/blogs/temp-mail-vs-real-email" />
+        <meta property="og:url" content="https://goysto.shop/blogs/temp-mail-vs-real-email" />
       </Head>
       <main className="max-w-4xl mx-auto px-4 pt-15 py-8 bg-[#223558]">
         <h1 className="text-3xl font-bold mb-4">Temp Mail vs Real Email</h1>
         <Image
-          src={'../../../../tempvsreal.jpg'}
+          src={tempvsreal}
           alt="Temp Mail vs Real Email"
           width={800}
           height={400}

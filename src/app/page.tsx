@@ -6,6 +6,7 @@ import 'react-circular-progressbar/dist/styles.css';
 import '../app/globals.css';
 import Image from 'next/image';
 import BlogCard from './components/BlogCard';
+import { copy } from '@/images/Image';
 export interface mail {
   from: string;            // e.g., "John Doe" or "noreply@domain.com"
   email: string;           // e.g., "someone@example.com"
@@ -133,7 +134,7 @@ function Home() {
                 onClick={copyToClipboard}
                 title="Copy email"
               >
-                <Image src={'../../copy.png'} height={20} width={20} alt="copy" />
+                <Image src={copy} height={20} width={20} alt="copy" />
               </button>
             </div>
           </div>

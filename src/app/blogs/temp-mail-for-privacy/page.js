@@ -3,6 +3,7 @@ import React from 'react';
 import Head from 'next/head';
 
 import Image from 'next/image';
+import { security } from '@/images/Image';
 
 const TempMailForPrivacy = () => {
   return (
@@ -13,12 +14,12 @@ const TempMailForPrivacy = () => {
         <meta property="og:title" content="Temp Mail for Privacy" />
         <meta property="og:description" content="Using temp mail to protect your online identity and stay anonymous. Learn how temporary emails safeguard your privacy in 2025." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://yourdomain.com/blogs/temp-mail-for-privacy" />
+        <meta property="og:url" content="https://goysto.shop/blogs/temp-mail-for-privacy" />
       </Head>
       <main className="max-w-4xl mx-auto px-4 py-8 -15 bg-[#223558]">
         <h1 className="text-3xl font-bold mb-4">Temp Mail for Privacy</h1>
         <Image
-          src={'../../../../security.jpg'}
+          src={security}
           alt="Temp Mail for Privacy"
           width={800}
           height={400}

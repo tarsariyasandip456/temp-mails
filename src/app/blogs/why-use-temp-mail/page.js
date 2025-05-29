@@ -2,6 +2,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import { wusedmail } from '@/images/Image';
 
 const WhyUseTempMail = () => {
   return (
@@ -12,12 +13,12 @@ const WhyUseTempMail = () => {
         <meta property="og:title" content="Why Use Temp Mail?" />
         <meta property="og:description" content="Learn why temp mail is useful for privacy, security, and avoiding spam." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://yourdomain.com/blogs/why-use-temp-mail" />
+        <meta property="og:url" content="https://goysto.shop/blogs/why-use-temp-mail" />
       </Head>
       <main className="max-w-4xl mx-auto text-white px-4 py-8 ">
         <h1 className="text-3xl font-bold mb-4">Why Use Temp Mail?</h1>
         <Image
-          src={'../../../../wusedmail.jpg'}
+          src={wusedmail}
           alt="Why Use Temp Mail"
           width={800}
           height={400}

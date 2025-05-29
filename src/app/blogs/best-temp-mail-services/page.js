@@ -2,6 +2,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import { besttempmail } from '@/images/Image';
 
 const BestTempMailServices = () => {
   return (
@@ -12,12 +13,12 @@ const BestTempMailServices = () => {
         <meta property="og:title" content="Best Temp Mail Services" />
         <meta property="og:description" content="A curated list of the best temp mail services in 2025 for privacy, convenience, and spam-free experience." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://yourdomain.com/blogs/best-temp-mail-services" />
+        <meta property="og:url" content="https://goysto.shop/blogs/best-temp-mail-services" />
       </Head>
       <main className="max-w-4xl mx-auto px-4  py-8 bg-[#223558]">
         <h1 className="text-3xl font-bold mb-4">Best Temp Mail Services</h1>
         <Image
-          src={'../../../../besttempmail.jpg'}
+          src={besttempmail}
           alt="Best Temp Mail Services"
           width={800}
           height={400}

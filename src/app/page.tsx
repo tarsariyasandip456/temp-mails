@@ -7,6 +7,8 @@ import '../app/globals.css';
 import Image from 'next/image';
 import BlogCard from './components/BlogCard';
 import { copy } from '@/images/Image';
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import { toast } from "react-toastify";
 export interface mail {
   from: string;            // e.g., "John Doe" or "noreply@domain.com"
@@ -254,6 +256,7 @@ function Home() {
         
       </section>
      
+     <ToastContainer />
     </div>
   );
 }

@@ -29,15 +29,15 @@ function Home() {
   const [countdown, setCountdown] = useState(10);
 
   const copyToClipboard = () => {
-   // setCoped(true);
+    // setCoped(true);
     navigator.clipboard.writeText(email);
-     toast.success("Copied!", {
-        position: "bottom-right",
-        autoClose: 2000,
-        hideProgressBar: true,
-        theme: "colored",
-      });
-   
+    toast.success("Copied!", {
+      position: "bottom-right",
+      autoClose: 2000,
+      hideProgressBar: true,
+      theme: "colored",
+    });
+
   };
 
   const fetchEmailAndMessages = () => {
@@ -54,12 +54,7 @@ function Home() {
     fetch(`https://tempapi-c1.vercel.app/api/messages?email=${email}`)
       .then((res) => res.json())
       .then((data) => {
-         toast.success("refresh!", {
-        position: "bottom-right",
-        autoClose: 2000,
-        hideProgressBar: true,
-        theme: "colored",
-      });
+
         setMails(data);
         setCountdown(10);
         setBtnIsLoading(false);
@@ -167,7 +162,15 @@ function Home() {
         <button
           disabled={isBtnLoading}
           className=" px-4 py-2 bg-[#223558] drop-shadow-md bg-white rounded-full px-3 py-1 hover:bg-indigo-500 transition duration-300"
-          onClick={handleReloadClick}
+          onClick={() => {
+            toast.success("refresh!", {
+              position: "bottom-right",
+              autoClose: 2000,
+              hideProgressBar: true,
+              theme: "colored",
+            });
+            handleReloadClick()
+          }}
         >
           Refresh
         </button>
@@ -231,7 +234,7 @@ function Home() {
                   onClick={() => setShowModal(false)}
                   className="absolute top-2 right-2 text-red-500 font-bold"
                 >
-                  <Image src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXE-7NOQoTeNU0m88Gne-Ucb9V6gjm4ol54w&s'} alt='abc'/>
+                  <Image src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXE-7NOQoTeNU0m88Gne-Ucb9V6gjm4ol54w&s'} alt='abc' />
                 </button>
               </div>
             </div>
@@ -253,10 +256,10 @@ function Home() {
             ))}
           </div>
         </main>
-        
+
       </section>
-     
-     <ToastContainer />
+
+      <ToastContainer />
     </div>
   );
 }

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://goysto.shop
+
+# Sitemaps
+Sitemap: https://goysto.shop/sitemap.xml

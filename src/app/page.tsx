@@ -234,7 +234,7 @@ function Home() {
                   onClick={() => setShowModal(false)}
                   className="absolute top-2 right-2 text-red-500 font-bold"
                 >
-                  <Image src={deleteSign} alt="abc" />
+                  <Image src={deleteSign} alt="abc" className='h-20 w-20' />
                 </button>
               </div>
             </div>

@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://goysto.shop',
+  siteUrl: 'https://www.goysto.shop',
   generateRobotsTxt: true,
   changefreq: 'daily',
   priority: 0.7,

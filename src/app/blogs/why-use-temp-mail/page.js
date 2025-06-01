@@ -13,7 +13,7 @@ const WhyUseTempMail = () => {
         <meta property="og:title" content="Why Use Temp Mail?" />
         <meta property="og:description" content="Learn why temp mail is useful for privacy, security, and avoiding spam." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://goysto.shop/blogs/why-use-temp-mail" />
+        <meta property="og:url" content="https://www.goysto.shop/blogs/why-use-temp-mail" />
       </Head>
       <main className="max-w-4xl mx-auto text-white px-4 py-8 ">
         <h1 className="text-3xl font-bold mb-4">Why Use Temp Mail?</h1>

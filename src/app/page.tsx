@@ -6,7 +6,7 @@ import 'react-circular-progressbar/dist/styles.css';
 import '../app/globals.css';
 import Image from 'next/image';
 import BlogCard from './components/BlogCard';
-import { copy } from '@/images/Image';
+import { copy,deleteSign,emails } from '@/images/Image';
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { toast } from "react-toastify";
@@ -196,7 +196,7 @@ function Home() {
                     className="flex w-full px-3 border-b py-2 items-start"
                     onClick={() => handleMailClick(mail.id, mail.subject)}
                   >
-                    <Image className="h-8 w-10 rounded-full" src={'../../email.png'} alt="email" />
+                    <Image className="h-8 w-10 rounded-full" src={emails} alt="email" />
                     <div className="flex w-full justify-between px-3">
                       <div className="text-start">
                         <p className="text-sm font-semibold text-gray-900">{formatGmail(mail).email}</p>
@@ -223,7 +223,7 @@ function Home() {
           </ul>
 
           {showModal && (
-            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40">
+            <div className="fixed inset-0 z-50 flex items-center mt-30 justify-center bg-black bg-opacity-40">
               <div className="bg-white rounded-lg shadow-lg w-[90%] h-[90%] p-4 overflow-y-auto relative">
                 <h2 className="text-xl font-bold mb-2">{modalTitle}</h2>
                 <div
@@ -234,7 +234,7 @@ function Home() {
                   onClick={() => setShowModal(false)}
                   className="absolute top-2 right-2 text-red-500 font-bold"
                 >
-                  <Image src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXE-7NOQoTeNU0m88Gne-Ucb9V6gjm4ol54w&s'} alt='abc' />
+                  <Image src={deleteSign} alt="abc" />
                 </button>
               </div>
             </div>

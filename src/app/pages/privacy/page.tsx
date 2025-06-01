@@ -75,8 +75,8 @@ const PrivacyPolicy = () => {
       <h2 className="text-2xl font-semibold mt-6 mb-2">Contacting Us</h2>
       <p className="mb-4">
         If you have any questions about this Privacy Policy, please contact us at:{" "}
-        <a href="https://goysto.shop/contacts/" className="text-blue-600 underline">
-          https://goysto.shop/contacts/
+        <a href="https://www.goysto.shop/contacts/" className="text-blue-600 underline">
+          https://www.goysto.shop/contacts/
         </a>
       </p>
     </div>

@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
 import React, { useState } from "react";
-
+import { Analytics } from "@vercel/analytics/next"
 const Navbar = () => {
     const [nav, setNav] = useState(false);
 
@@ -25,7 +25,8 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-[#6b5b95] fixed nav z-[1000]">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-[#6b5b95] fixed nav md:z-[1000]">
+      <Analytics></Analytics>
       <div>
         {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
         <h1 className="text-3xl font-signature ml-2">

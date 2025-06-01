@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Free Temp Mail - Anonymous Disposable Email",
     description: "Create free temp mail addresses instantly. No signup. Stay private.",
-    url: "https://goysto.shop",
+    url: "https://www.www.goysto.shop",
     type: "website",
   },
   twitter: {

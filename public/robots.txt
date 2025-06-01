@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://goysto.shop
+Host: https://www.goysto.shop
 
 # Sitemaps
-Sitemap: https://goysto.shop/sitemap.xml
+Sitemap: https://www.goysto.shop/sitemap.xml

@@ -11,7 +11,7 @@ const ContactPage = () => {
         <meta property="og:title" content="Contact Us - Temp Mail" />
         <meta property="og:description" content="Reach out to Temp Mail for assistance or more information about our disposable email services." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://goysto.shop/contact" />
+        <meta property="og:url" content="https://www.goysto.shop/contact" />
       </Head>
 
       <main className="max-w-3xl mx-auto px-4 py-10">
